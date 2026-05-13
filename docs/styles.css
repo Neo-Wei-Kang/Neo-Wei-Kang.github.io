@@ -1,1 +1,62 @@
-/* css styles */
+.trip-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  line-height: 1.7;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f3f6f8;
+  border-radius: 16px;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.trip-section {
+  margin-bottom: 50px;
+}
+
+.trip-section h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  border-bottom: 3px solid #3b82f6;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 700px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}
